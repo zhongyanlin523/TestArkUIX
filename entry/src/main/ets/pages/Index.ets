@@ -1,5 +1,6 @@
 import { User } from './TestDAO/UserDao'
 import { userDao } from './TestDAO/UserDao'
+import { JSONObject } from '@yunkss/ef_json'
 
 @Entry
 @Component
@@ -19,6 +20,11 @@ struct Index {
         Button("查询商品").onClick(() => {
           userDao.findOnePTypeName((name: string) => {
             console.debug('商品 =' + name)
+            let user = new User();
+            user.id = 7844
+            user.name = '测试'
+            let j = JSONObject.toJSONString(user);
+            console.debug('测试 =' + j)
           })
         })
       }.width('100%').margin({ bottom: '10vp' })

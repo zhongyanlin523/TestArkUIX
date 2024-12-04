@@ -1,8 +1,16 @@
 {
-	"BuildOptions":{},
+	"BuildOptions":{
+		"BUNDLE_NAME":"com.wltrj.myapplication",
+		"SELECT_BUILD_MODE":"",
+		"BUILD_PATH":{
+			"OUTPUT_PATH":"D:\\project\\huawei\\TestArkUIX\\build\\outputs\\default"
+		},
+		"SELECT_BUILD_PRODUCT":"default"
+	},
 	"CommonInfo":{
+		"crossplatform.projectType":"application",
 		"project.ide.version":"5.0.3.910",
-		"current.select.product":"",
+		"current.select.product":"default",
 		"current.select.buildMode":""
 	}
 }
