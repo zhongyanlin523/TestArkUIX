@@ -1,0 +1,6 @@
+{
+  "crossplatform": false,
+  "modules": [
+    "entry"
+  ]
+}
