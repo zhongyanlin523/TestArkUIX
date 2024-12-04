@@ -1,6 +1,7 @@
 import { User } from './TestDAO/UserDao'
 import { userDao } from './TestDAO/UserDao'
 import { JSONObject } from '@yunkss/ef_json'
+import { MD5 } from '@yunkss/ef_crypto'
 
 @Entry
 @Component
@@ -24,7 +25,10 @@ struct Index {
             user.id = 7844
             user.name = '测试'
             let j = JSONObject.toJSONString(user);
+
             console.debug('测试 =' + j)
+            console.debug('测试2 =' + MD5.hash('测试', 'utf-8'))
+
           })
         })
       }.width('100%').margin({ bottom: '10vp' })
